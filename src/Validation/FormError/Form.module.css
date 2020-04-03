@@ -1,0 +1,25 @@
+.textarea.error textarea {
+    border: 1px solid red;
+}
+
+.textarea.error input {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.textarea_text {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    width: 278px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    background-color: red;
+}
+
+.textarea_text img {
+    width: 29px;
+    height: 29px;
+}

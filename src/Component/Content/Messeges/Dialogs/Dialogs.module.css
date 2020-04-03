@@ -1,0 +1,18 @@
+.dialog_block {
+    color: wheat;
+    padding-left: 10px;
+}
+
+.dialog_user {
+    width: 590px;
+    margin-top: 20px;
+}
+
+.dialog_avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid white;
+}

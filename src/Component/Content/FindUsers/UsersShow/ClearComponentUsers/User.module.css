@@ -1,0 +1,81 @@
+.users_section {
+    display: flex;
+    justify-content: start;
+}
+
+.users_title  {
+    color: white;
+    margin: 0;
+    padding: none;
+    font-size: 30px;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.users_section_avatar {
+    width: 60px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.users_section_avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.users_section_btn {
+    display: block;
+    cursor: pointer;
+    background-color: rgb(211, 163, 6);
+    border: 1px solid rgb(128, 16, 16);
+    color: white;
+    transition: all 0.3s;
+}
+
+.users_section_btn:hover {
+    background-color: rgb(128, 16, 16);
+}
+
+.users_section_infoUser {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(128, 16, 16);
+    width: 500px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 40px;
+    border: 1px solid rgb(211, 163, 6);
+    border-radius: 5px;
+}
+
+.users_section_fullName {
+    color: white;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.users_section_status {
+    color: white;
+    margin-left: 5px;
+    margin-top: 23px;
+    font-size: 13px;
+}
+
+.users_section_country {
+    text-align: right;
+    color: white;
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+.users_section_city {
+    text-align: right;
+    color: white;
+    font-size: 17px;
+    margin-right: 15px;
+    margin-top: 23px;
+}

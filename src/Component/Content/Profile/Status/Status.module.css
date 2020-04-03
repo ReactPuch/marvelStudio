@@ -1,0 +1,27 @@
+.status {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.status_title {
+    font-weight: bold;
+    color: rgb(219, 10, 10);
+}
+
+.status input {
+    margin-left: 20px;
+    background-color: rgb(16, 194, 46);
+    padding: 2px;
+    font-weight: 700;
+    border: 1px solid white;
+    bottom: 0;
+}
+
+.status_chenge {
+    margin-left: 20px;
+    color: rgb(16, 194, 46);
+    font-weight: 700;
+    font-style: oblique;
+}

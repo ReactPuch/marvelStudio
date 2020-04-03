@@ -1,0 +1,56 @@
+.page_block {
+    color: white;
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    height: 23px;
+    margin-top: 10px;
+}
+
+.page_block img {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.page_block img:hover {
+    transform: scale(1.1);
+}
+
+.page_img_left {
+    margin-right: 10px;
+}
+
+.page_img_right {
+    margin-left: 10px;
+}
+
+.page_block div {
+    width: 30px;
+    font-size: 19px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid rgb(128, 16, 16);
+    border-radius: 2px;
+}
+
+.page_block div:hover {
+    background-color: rgb(128, 16, 16);
+    transform: scale(1.1);
+}
+
+.page_item {
+    background-color: rgb(211, 163, 6);
+    transform: scale(1.1);
+}
+
+.page_img {
+    margin-left: 100px;
+    width: 500px;
+    height: 200px;
+}

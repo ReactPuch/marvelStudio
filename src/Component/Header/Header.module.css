@@ -1,0 +1,67 @@
+.header {
+    grid-area: header;
+    background-color: rgb(128, 16, 16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 28.5%;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header_login {
+    border: 1px solid white;
+    margin-right: 65px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.header_link {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 2px;
+    cursor: pointer;
+    
+}
+
+.header_login:hover {
+    background-color: rgb(16, 194, 46);
+}
+
+.header_login_name {
+    position: relative;
+    background-color: rgb(16, 194, 46);
+    border-radius: 3px;
+    padding: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header_login_logout {
+    position: absolute;
+    width: 55px;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    cursor: pointer;
+    right: -60px;
+    top: -1px;
+    height: 27px;
+    transition: all 0.5s;
+}
+
+.header_login_logout:hover {
+    background-color: white;
+    color: black;
+}
+

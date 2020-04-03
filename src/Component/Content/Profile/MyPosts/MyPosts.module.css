@@ -1,0 +1,41 @@
+.formTitle {
+    color: white;
+}
+
+.profile_form textarea {
+    background-color:  rgb(211, 163, 6);
+    border: solid 1px white;
+    border-radius: 2px;
+    width: 500px;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+
+.form_btn {
+    text-align: left;
+    border: solid 1px white;
+    border-radius: 2px;
+    background-color:  rgb(211, 163, 6);
+    color: white;
+    font-size: 17px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 70px;
+    height: 45px;
+    text-align: center;
+    color: black;
+}
+
+.form_btn:hover {
+    background-color: rgb(219, 10, 10);
+}
+
+.profile_form {
+    display: flex;
+    justify-content: start;
+}
+
