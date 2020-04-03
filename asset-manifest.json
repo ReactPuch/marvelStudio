@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/marvelStudio/static/css/main.0adf8a30.chunk.css",
+    "main.js": "/marvelStudio/static/js/main.55bbec88.chunk.js",
+    "main.js.map": "/marvelStudio/static/js/main.55bbec88.chunk.js.map",
+    "runtime-main.js": "/marvelStudio/static/js/runtime-main.5376fac0.js",
+    "runtime-main.js.map": "/marvelStudio/static/js/runtime-main.5376fac0.js.map",
+    "static/js/2.c60d399b.chunk.js": "/marvelStudio/static/js/2.c60d399b.chunk.js",
+    "static/js/2.c60d399b.chunk.js.map": "/marvelStudio/static/js/2.c60d399b.chunk.js.map",
+    "static/css/3.9c82ed06.chunk.css": "/marvelStudio/static/css/3.9c82ed06.chunk.css",
+    "static/js/3.7f1094a3.chunk.js": "/marvelStudio/static/js/3.7f1094a3.chunk.js",
+    "static/js/3.7f1094a3.chunk.js.map": "/marvelStudio/static/js/3.7f1094a3.chunk.js.map",
+    "static/css/4.7fe07bcb.chunk.css": "/marvelStudio/static/css/4.7fe07bcb.chunk.css",
+    "static/js/4.2e0e0e50.chunk.js": "/marvelStudio/static/js/4.2e0e0e50.chunk.js",
+    "static/js/4.2e0e0e50.chunk.js.map": "/marvelStudio/static/js/4.2e0e0e50.chunk.js.map",
+    "static/css/5.e8d4b6c3.chunk.css": "/marvelStudio/static/css/5.e8d4b6c3.chunk.css",
+    "static/js/5.63487dc6.chunk.js": "/marvelStudio/static/js/5.63487dc6.chunk.js",
+    "static/js/5.63487dc6.chunk.js.map": "/marvelStudio/static/js/5.63487dc6.chunk.js.map",
+    "index.html": "/marvelStudio/index.html",
+    "precache-manifest.d7ff5cfd35abd96318f037d0619e2980.js": "/marvelStudio/precache-manifest.d7ff5cfd35abd96318f037d0619e2980.js",
+    "service-worker.js": "/marvelStudio/service-worker.js",
+    "static/css/3.9c82ed06.chunk.css.map": "/marvelStudio/static/css/3.9c82ed06.chunk.css.map",
+    "static/css/4.7fe07bcb.chunk.css.map": "/marvelStudio/static/css/4.7fe07bcb.chunk.css.map",
+    "static/css/5.e8d4b6c3.chunk.css.map": "/marvelStudio/static/css/5.e8d4b6c3.chunk.css.map",
+    "static/css/main.0adf8a30.chunk.css.map": "/marvelStudio/static/css/main.0adf8a30.chunk.css.map",
+    "static/js/2.c60d399b.chunk.js.LICENSE.txt": "/marvelStudio/static/js/2.c60d399b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5376fac0.js",
+    "static/js/2.c60d399b.chunk.js",
+    "static/css/main.0adf8a30.chunk.css",
+    "static/js/main.55bbec88.chunk.js"
+  ]
+}
