@@ -10,8 +10,18 @@ let LoginForm = (props) => {
             {props.error && <div className = {clases.login_form_error}> {props.error} </div> }
             {Form.Field([requiredField], "email", Form.Input, "Email")}
             {Form.Field([requiredField], "password", Form.Input, "Password", {type: 'password'})}
-            <Field  name = {"rememberMe"} component = {Form.Input} type = {"checkbox"} className = {clases.login_form_checkbox}/> <h2>remember me</h2>
+            <div className = {clases.login_form_checkbox}>
+                <Field  name = {"rememberMe"} component = {Form.Input} type = {"checkbox"} className = {clases.login_formCheckbox}/>
+                <div className = {clases.login_checkbox_text}>remember me</div>
+            </div>
             <button>Login</button>
+            <div className = {clases.login_captcha}>
+                {props.captchaUrl && <img src = {props.captchaUrl} className = {clases.login_captcha_img}/>} 
+                <div className = {clases.login_captcha_input}>
+                    {props.captchaUrl && Form.Field([requiredField], 'captcha', Form.Input, 'Symbol from img')} 
+                </div>                       
+                                  
+            </div>
         </form>
     )
 };

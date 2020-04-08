@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    background-color: rgb(128, 16, 16);
+    background-color: rgb(15, 95, 201);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,36 +11,37 @@
     height: 60px;
     cursor: pointer;
     transition: all 0.3s;
-}
-
-.header_login {
-    border: 1px solid white;
-    margin-right: 65px;
-    border-radius: 5px;
-    transition: all 0.3s;
+    margin-left: -3px;
 }
 
 .header_link {
-    color: black;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 5px;
     font-weight: bold;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 20px;
     padding: 2px;
     cursor: pointer;
-    
+    text-decoration: none;
+    transition: all 0.5s;
+    margin-left: 140px;
 }
 
-.header_login:hover {
-    background-color: rgb(16, 194, 46);
+.header_link:hover {
+    background-color: white;
+    color: black;
 }
 
 .header_login_name {
+    border-radius: 5px;
+    transition: all 0.3s;
     position: relative;
-    background-color: rgb(16, 194, 46);
     border-radius: 3px;
     padding: 2px;
+    color: white;
+    margin-left: 130px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .header_login_logout {
@@ -54,7 +55,7 @@
     border: 1px solid white;
     background-color: black;
     cursor: pointer;
-    right: -60px;
+    right: -65px;
     top: -1px;
     height: 27px;
     transition: all 0.5s;

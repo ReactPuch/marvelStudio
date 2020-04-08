@@ -11,7 +11,6 @@ let Users = (props) => {
                     </NavLink>
                     {props.followed}
                 </div>
-                
                 <div className = {Clases.users_section_infoUser}>
                     <div className = {Clases.users_section_infoLeft}>
                         <div className = {Clases.users_section_fullName}>{props.name}</div>
@@ -22,7 +21,6 @@ let Users = (props) => {
                         <div className = {Clases.users_section_city}>{props.city}</div>
                     </div>  
                 </div>
-               
             </div>
     )
 }

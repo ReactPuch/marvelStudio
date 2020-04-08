@@ -10,7 +10,6 @@ import { Route, withRouter } from "react-router-dom";
 import { connect } from 'react-redux';
 import { initializedThunkCreater } from './Redux/Reducer/AppReducer';
 import { compose } from 'redux';
-import PagePreloader from './Component/Content/FindUsers/UsersNumberPage/PagePlreloader/PagePreloader';
 import SelectorForState from './Redux/Reducer/SelectorForState/SelectorForState';
 
 const UsersComponent = React.lazy( () => import ('./Component/Content/Messeges/User/UserContainer')),
@@ -58,3 +57,4 @@ export default compose(
     connect(getStateForApp, { initializedThunkCreater }),
     withRouter
 )(App);
+

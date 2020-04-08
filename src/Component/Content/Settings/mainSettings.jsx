@@ -1,8 +1,5 @@
 import React from 'react';
 import Class from './Settings.module.css';
-import Friends from '../../NavMenu/Friends/FriendsCollect';
-
-
 
 let Settings = () => {
     return (

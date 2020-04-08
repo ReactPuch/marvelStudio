@@ -3,7 +3,6 @@ import Clases from '../ClearComponentUsers/User.module.css';
 import { connect } from 'react-redux';
 import { unFollowThunkCreator, followThunkCreator } from '../../../../../Redux/Reducer/FindUsersDataReducer';
 import Users from './Users';
-import { Redirect } from 'react-router-dom';
 
 class MapForUsers extends React.Component {
     render () {

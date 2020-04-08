@@ -33,7 +33,6 @@
 }
 
 .login_form {
-    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -52,18 +51,27 @@
     color: white;
 }
 
-.login_form_checkbox {
+.login_formCheckbox {
     width: 16px;
     cursor: pointer;
 }
 
+.login_form_checkbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.login_checkbox_text {
+    width: 110px;
+    height: 28px;
+    font-weight: 600;
+}
+
 .login_form h2 {
-    position: absolute;
-    line-height: 10px;
     font-size: 17px;
     font-weight: 600;
-    bottom: 27px;
-    left: 55px;
+    margin: none;
 } 
 
 .login_form button {
@@ -104,5 +112,28 @@
     margin:  0 auto;
     margin-left: 15px;
     margin-bottom: 10px;
+}
+
+.login_captcha_input {
+   position: absolute;
+   margin-top: 162px;
+}
+
+.login_captcha_input input {
+    color: black;
+    width: 190.5px;
+    margin-left: 15.8px;
+    border-radius: 0;
+    border: 1px solid rgb(14, 190, 146);
+    background-color:white;
+}
+
+.login_captcha_img {
+    position: absolute;
+    border: 1px solid rgb(14, 190, 146);
+    margin-top: 35px;
+    margin-left: 16px;
+    width: 200px;
+    height: 125px;
 }
 

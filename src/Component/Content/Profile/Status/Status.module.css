@@ -21,7 +21,9 @@
 
 .status_chenge {
     margin-left: 20px;
-    color: rgb(16, 194, 46);
+    color: rgb(255, 196, 0);
     font-weight: 700;
     font-style: oblique;
+    cursor: pointer;
+    text-transform: uppercase;
 }

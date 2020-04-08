@@ -8,7 +8,7 @@ class LoginFormContainer extends React.Component {
         let {isAuth, loginOnServerThunkCreater} = this.props;
         return (
             <div>
-                <LoginMain isAuth = {isAuth} loginOnServerThunkCreater = {loginOnServerThunkCreater}/>>
+                <LoginMain isAuth = {isAuth} loginOnServerThunkCreater = {loginOnServerThunkCreater} captchaUrl = {this.props.captchaUrl}/>>
             </div>
         )
     }
@@ -16,7 +16,8 @@ class LoginFormContainer extends React.Component {
 
 let getStateForLigin = (state) => {
     return {
-        isAuth: state.LoginAuthReducer.isAuth
+        isAuth: state.LoginAuthReducer.isAuth,
+        captchaUrl: state.LoginAuthReducer.captchaUrl
     }
 }
 

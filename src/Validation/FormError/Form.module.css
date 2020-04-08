@@ -1,12 +1,21 @@
+
 .textarea.error textarea {
     border: 1px solid red;
 }
 
 .textarea.error input {
     border: 1px solid red;
-    border-radius: 10px;
 }
 
+.textarea input::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.textarea_text img {
+    width: 29px;
+    height: 29px;
+}
 .textarea_text {
     margin-top: 2px;
     display: flex;
@@ -19,7 +28,4 @@
     background-color: red;
 }
 
-.textarea_text img {
-    width: 29px;
-    height: 29px;
-}
+

@@ -1,9 +1,11 @@
 import API from '../../Api/Api';
+import { stopSubmit } from 'redux-form';
 ////////////////////////////////////////////////////////////////////////////////////////  <const>
 const ADD_COMMENTS = "profileReducer/ADD_COMMENTS",
       SET_USERS_PROFILE = 'profileReducer/SET_USERS_PROFILE',
       SET_STATUS = 'profileReducer/SET_STATUS',
-      DELETE_COMMENTS = 'profileReducer/DELETE_COMMENTS';
+      DELETE_COMMENTS = 'profileReducer/DELETE_COMMENTS',
+      SEVE_PHOTO_SUCCESS = 'profileReducer/SEVE_PHOTO_SUCCESS';
 ////////////////////////////////////////////////////////////////////////////////////////  </const>
 
 ////////////////////////////////////////////////////////////////////////////////////////  <initialStateArray>
@@ -19,7 +21,6 @@ let initialState = {
 
 ////////////////////////////////////////////////////////////////////////////////////////  <profileReducer>
 const profileReducer = ( state = initialState, action ) => {
-    let copyState;
     switch(action.type) {
         case ADD_COMMENTS:
             let newComments = action.newComentPosts;
@@ -41,7 +42,12 @@ const profileReducer = ( state = initialState, action ) => {
             return {
                 ...state,
                 MessegesData: state.MessegesData.filter( p => p.id != action.userId)
-            }                                                          
+            };
+        case SEVE_PHOTO_SUCCESS:
+            return {
+                ...state,
+                profile: {...state.profile, photos: action.photos}
+            };                                                  
         default:
             return state;                                                                                                                                                 
     }                                                                     
@@ -53,6 +59,7 @@ export const setUsersProfile = (profile) => ({ type: SET_USERS_PROFILE, profile 
 export const addCommentsActionCreator = (newComentPosts) => ({ type: ADD_COMMENTS, newComentPosts });
 export const setStatusAC = (status) => ({ type: SET_STATUS, status});
 export const deleteCommentAC = (userId) => ({ type: DELETE_COMMENTS, userId });
+export const savePhotoSuccess = (photos) => ({ type: SEVE_PHOTO_SUCCESS, photos});
 ////////////////////////////////////////////////////////////////////////////////////////  </ActionCreator>
 
 ////////////////////////////////////////////////////////////////////////////////////////  <Thunk>
@@ -77,6 +84,28 @@ export let updateStatusThunkCreater = (status) => {
                 dispatch(setStatusAC(status));
             }
     };
+}
+
+export let savePhotoThunkCreater = (file) => {
+    return async (dispatch) => {
+        let data = await API.localMeAPI.savePhoto(file);
+            if ( data.data.resultCode === 0 ) {
+                dispatch(savePhotoSuccess(data.data.data.photos))
+            }
+    }
+}
+
+export let saveDataForProfileThunkCreater = (profile) => {
+    return async (dispatch, getState) => {
+        let userId = getState().LoginAuthReducer.id
+        let data = await API.localMeAPI.saveProfile(profile);
+            if (data.data.resultCode === 0) {
+                dispatch(getUsersProfileThunkCreater(userId))
+            } else { 
+                dispatch(stopSubmit("edit_profile", {_error: data.data.messages[0]}));
+                return Promise.reject(data.data.messages[0]);
+            }
+    }
 }
 ////////////////////////////////////////////////////////////////////////////////////////  </Thunk>
 

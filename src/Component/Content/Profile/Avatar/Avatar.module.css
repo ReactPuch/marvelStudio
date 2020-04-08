@@ -8,21 +8,16 @@
     width: 150px;
     height: 150px;
     margin-right: 50px;
+    margin-top: 25px;
 }
 
 .avatar_img img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    transition: all 0.3s;
-    cursor: pointer;
-    margin-top: 25px;
+    
     border: 1px solid white;
     border-radius: 100%;
-}
-
-.avatar_img img:hover {
-    transform: scale(1.1);
 }
 
 .avatar_info {
@@ -36,7 +31,7 @@
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    color: rgb(211, 163, 6);
+    color: white;
     transition: all 0.3s;
 }
 
@@ -50,7 +45,8 @@
 
 .avatar_web span {
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 40px;
+    color: white;
 }
 
 .avatar_title {
@@ -58,13 +54,133 @@
     margin-bottom: 10px;
     font-weight: bold;
     color: rgb(219, 10, 10);
+    text-transform: uppercase;
 }
 
 .avatar_text {
-    font-weight: bold;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    color: rgb(219, 10, 10);
     font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
 }
 
 .avatar_text span {
     font-weight: normal;
+    color: white;
+    font-weight: 500;
+    margin-right: 50px;
+    color: rgb(255, 196, 0);
 }
+
+.avatar_text textarea {
+    width: 160px;
+    height: 15px;
+    margin-top: 6px;
+    margin-right: 100px;
+    background-color: rgb(16, 194, 46);
+    border: 1px solid white;
+    text-align: center;
+}
+
+.avatar_text textarea::-webkit-input-placeholder {
+    color: black;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.avatar_text input {
+    height: 19px;
+    width: 164px;
+    margin-right: 100px;
+    padding: none;
+    text-align: center;
+    background-color: rgb(16, 194, 46);
+    border: 1px solid white;
+}
+
+.avatar_checkbox input {
+    width: 18px;
+    height: 18px;
+    margin-top: 12px;
+}
+
+.avatar_btn_img {
+    border: 1px solid white;
+    width: 115px;
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;  
+}
+
+.avatar_edit {
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 334px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: rgb(15, 95, 201);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.avatar_edit:hover {
+    background-color: rgb(219, 10, 10);
+}
+
+.avatar_input_webSide {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar_input_webSide input {
+    margin-right: 150px;
+    height: 19px;
+    width: 164px;
+    padding: none;
+    text-align: center;
+    background-color: rgb(16, 194, 46);
+    border: 1px solid white;
+}
+
+.avatar_input_webSide input::-webkit-input-placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+.avatar_link_webSide {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.avatar_form_error {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: rgb(211, 163, 6);
+    margin-left: 25px;
+}
+
+.avatar_form_error span {
+    color: rgb(211, 163, 6);
+}
+
+.avatar_form_error span {
+    text-transform: uppercase;
+}
+
+.avatar_error_img {
+    width: 25px;
+    height: 25px;
+}
+
+
+

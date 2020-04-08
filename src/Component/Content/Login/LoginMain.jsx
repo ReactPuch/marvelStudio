@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 
 let LoginMain = (props) => {
     let Login = (loginData) => {
-        props.loginOnServerThunkCreater(loginData.email, loginData.password, loginData.rememberMe);
+        props.loginOnServerThunkCreater(loginData.email, loginData.password, loginData.rememberMe, loginData.captcha);
     };
     if (props.isAuth) {
         return <Redirect to = {'/profile'}/>
@@ -21,7 +21,7 @@ let LoginMain = (props) => {
                 Войдите и получите его
             </div>
             <div className = {clases.login_form_block}>
-                <LoginForm onSubmit = {Login}/>
+                <LoginForm onSubmit = {Login} captchaUrl = {props.captchaUrl}/>
             </div> 
                 <img className = {clases.login_img} src="https://cdn.dribbble.com/users/1967053/screenshots/4541633/___-1.gif"/>
         </div>  

@@ -13,6 +13,12 @@
     font-size: 13px;
 }
 
+.profile_form textarea::-webkit-input-placeholder {
+    color: black;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
 
 .form_btn {
     text-align: left;

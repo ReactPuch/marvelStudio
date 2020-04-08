@@ -13,7 +13,7 @@ const FOLLOW = "FindUsersReducer/FOLLOW",
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// <initialStateArray>
 let initialState = {
     UsersData: [],  
-    pageSize: 5,
+    pageSize: 6,
     totalUsersCount: 25,
     currentPage: 1,
     isFetching: true,
@@ -97,10 +97,10 @@ export let unFollowThunkCreator = (userId) => {
 }
 
 let UsersAndPageFlow = async (dispatch, currentPage, pageSize) => {
-    dispatch(toggleIsFetchingActionCreater(true));
+        dispatch(toggleIsFetchingActionCreater(true));
     let data = await API.usersAPI.getUsers(currentPage, pageSize);
-    dispatch(toggleIsFetchingActionCreater(false));
-    dispatch(setUsersActionCreater(data.items)); 
+        dispatch(toggleIsFetchingActionCreater(false));
+        dispatch(setUsersActionCreater(data.items)); 
 }
 
 export let addUsersThunkCreator = (currentPage, pageSize) => { 
