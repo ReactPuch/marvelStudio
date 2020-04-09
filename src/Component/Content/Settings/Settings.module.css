@@ -2,3 +2,13 @@
 img {
     width: 100%;
 }
+
+.Settings {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.Settings.block {
+    background-color: red;
+} 

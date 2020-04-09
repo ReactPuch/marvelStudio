@@ -14,7 +14,7 @@ const FOLLOW = "FindUsersReducer/FOLLOW",
 let initialState = {
     UsersData: [],  
     pageSize: 6,
-    totalUsersCount: 25,
+    totalUsersCount: 120,
     currentPage: 1,
     isFetching: true,
     toggleForFollow: []
@@ -57,6 +57,7 @@ let FindUsersReducer = (state = initialState, action) => {
                                     [...state.toggleForFollow, action.userId] 
                                   : state.toggleForFollow.filter( id => id != action.userId)
             };
+        
         default:
             return state;
     }

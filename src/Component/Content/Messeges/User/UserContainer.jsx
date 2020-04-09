@@ -24,6 +24,6 @@ let getArrayforMap = (state) => {
 
 export default compose(
     connect(getArrayforMap),
-    withAuthRedirect
+    // withAuthRedirect
 )(UsersComponent)
 

@@ -5,7 +5,8 @@
     justify-content: space-between;
     width: 210px;
     height: 23px;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .page_block img {
@@ -24,15 +25,15 @@
 }
 
 .page_img_right {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .page_block div {
-    width: 30px;
+    min-width: 25px;
     font-size: 19px;
     line-height: 20px;
     text-align: center;
-    margin-right: 3px;
+    margin-right: 6px;
     cursor: pointer;
     transition: all 0.3s;
     border: 1px solid rgb(128, 16, 16);
@@ -44,9 +45,13 @@
     transform: scale(1.1);
 }
 
-.page_item {
+.page_number {
     background-color: rgb(211, 163, 6);
     transform: scale(1.1);
+}
+
+.page_number.page_selected {
+    background-color: rgb(128, 16, 16);
 }
 
 .page_img {
